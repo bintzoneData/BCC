@@ -7,8 +7,4 @@ export default defineConfig({
   build: {
     outDir: 'dist',
   },
-  scripts: {
-    build: 'vite build',
-    preview: 'vite preview',
-  },
 });

@@ -24,7 +24,10 @@ const Calculator = () => {
     e.preventDefault();
     //
     const totalCoins = investment / cost;
-    setFormData({ ...formData, profit: (totalCoins * current).toFixed(2) });
+    setFormData({
+      ...formData,
+      profit: (totalCoins * current - investment).toFixed(2),
+    });
     setIsDisabled(true);
   };
   useEffect(() => {
