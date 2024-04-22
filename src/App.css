@@ -1,0 +1,228 @@
+/* background clours */
+.B_navy {
+  background-color: #142c54;
+  color: white;
+  border: 1px solid #142c54;
+}
+.B_blue {
+  background-color: #0f5ed0;
+  color: white;
+  border: none;
+}
+.B_darkcyan {
+  background-color: darkcyan;
+  color: white;
+  border: 1px solid darkcyan;
+}
+.B_greenLight {
+  background-color: #4af667;
+  color: white;
+  border: 1px solid #4af667;
+}
+.B_black {
+  background-color: #141414;
+  color: white;
+  border: 1px solid #141414;
+}
+.B_orange {
+  background-color: #f3b909;
+  color: white;
+  border: 1px solid #f3b909;
+}
+.B_red {
+  background-color: #ea0b16;
+  color: white;
+  border: 1px solid#EA0B16;
+}
+.main-app {
+  display: flex;
+  height: 100dvh;
+  position: fixed;
+  width: 100%;
+}
+.side-bar {
+  background-color: var(--black_dark);
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  /*browser height  */
+  min-height: -webkit-fill-available;
+  height: 100dvh;
+  display: flex;
+}
+.main-body {
+  flex-grow: 1;
+}
+.main-body > header {
+  height: 6vh;
+  margin-bottom: 10px;
+}
+.main-body > section {
+  margin-top: 1px;
+  height: 93dvh;
+  overflow: auto;
+}
+/* burron card */
+.btn_add {
+  background-color: #0f5ed0;
+  color: white;
+  border: none;
+}
+
+.btn_edit {
+  background-color: #f3b909;
+  color: white;
+  border: 1px solid #f3b909;
+}
+.btn_delete {
+  background-color: #ea0b16;
+  color: white;
+  border: 1px solid#EA0B16;
+}
+
+.btn_back {
+  background-color: #142c54;
+  color: white;
+  border: 1px solid #142c54;
+}
+
+.btn_uplaod {
+  background-color: darkcyan;
+  color: white;
+  border: 1px solid darkcyan;
+}
+.btn_upload {
+  background-color: darkcyan;
+  color: white;
+  border: 1px solid darkcyan;
+}
+.btn_block {
+  background-color: #142c54;
+  color: white;
+  border: 1px solid #142c54;
+}
+.pdfLast {
+  display: flex;
+  align-items: center;
+}
+.pdf-last-btns {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 30px;
+}
+/* forms */
+.label {
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.input {
+  font-size: 18px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  border: 1px solid gray;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: transparent;
+  text-transform: lowercase !important;
+}
+.textCenter {
+  text-align: center;
+}
+.inputIcon {
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+}
+input:focus {
+  outline-color: #accfff;
+}
+.input:disabled {
+  background-color: #c4cccc;
+}
+.errorP {
+  color: red;
+}
+.expireToken {
+}
+.activeColor {
+  color: #33c92d;
+}
+.inactiveColor {
+  color: #ea0b16;
+}
+
+.noItems {
+  margin-top: 10px;
+  font-size: 18px;
+  color: gray;
+  margin: 10px;
+}
+.noItems::first-letter {
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 490px) {
+  .side-bar {
+    width: 300px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .side-bar {
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #bar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  #bar {
+    display: none;
+  }
+  .side-bar {
+    position: fixed;
+    z-index: 50;
+    width: 90%;
+  }
+}
+
+/* not found */
+
+/*======================
+    404 page
+=======================*/
+
+.page_404 {
+  background: #fff;
+  height: 100vh;
+}
+
+.notFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  padding-top: 150px;
+}
+.notFound > h1 {
+  font-size: 50px;
+  text-transform: capitalize;
+  text-align: center;
+}
+.notFound > h3 {
+  font-size: 30px;
+  color: gray;
+  margin-top: 10px;
+  text-align: center;
+}
+.notFound > h3::first-letter {
+  text-transform: uppercase;
+}
+.notFound > button {
+  margin-top: 15px;
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+}
