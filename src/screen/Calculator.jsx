@@ -39,23 +39,21 @@ const Calculator = () => {
         <form onSubmit={onSubmit} className={style.card}>
           <header className={style.header}>
             <h1 className={style.title}>crypto calculator</h1>
-            {isDisabled && (
-              <Button
-                type='primary'
-                onClick={() => {
-                  setFormData({
-                    cost: 0,
-                    investment: 0,
-                    current: 0,
-                    profit: null,
-                  });
-                  setIsDisabled(false);
-                }}
-                danger
-              >
-                clear
-              </Button>
-            )}
+
+            <Button
+              type='primary'
+              onClick={() => {
+                setFormData({
+                  cost: 0,
+                  investment: 0,
+                  current: 0,
+                  profit: null,
+                });
+              }}
+              danger
+            >
+              clear
+            </Button>
           </header>
           <main className={style.main}>
             <section className={style.boxes}>
@@ -67,7 +65,6 @@ const Calculator = () => {
                   type='number'
                   required
                   value={cost === 0 ? '' : cost}
-                  disabled={isDisabled}
                   step={1}
                 />
               </div>
@@ -79,7 +76,6 @@ const Calculator = () => {
                   type='number'
                   required
                   value={investment === 0 ? '' : investment}
-                  disabled={isDisabled}
                   step={1}
                 />
               </div>
@@ -93,7 +89,6 @@ const Calculator = () => {
                   onChange={onCurrent}
                   required
                   value={current === 0 ? '' : current}
-                  disabled={isDisabled}
                   step={1}
                 />
               </div>
@@ -109,7 +104,7 @@ const Calculator = () => {
               </div>
             </section>
             <div className={style.btnBox}>
-              <Button disabled={isDisabled} htmlType='submit' type='primary'>
+              <Button htmlType='submit' type='primary'>
                 Calculate
               </Button>
             </div>
